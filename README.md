@@ -1,23 +1,23 @@
 # gamerpad-hid-core
 
-CoreOrbits tabanında gamepad isimlendirmesiyle düzenlenmiş klavye ve fare odaklı sanal girdi paketi.
+Keyboard and mouse focused virtual input package using gamepad-style naming across the API.
 
 ## What This Is
 
-Bu paket şu anda gamepad adlandırma şeması altında klavye ve fare durumunu yöneten yüksek seviyeli sınıfları ve cihaz kimlik yardımcılarını içerir.
+This package currently provides high-level keyboard and mouse state classes and device identity helpers under a gamepad-style naming scheme.
 
 ## Features
 
-- `VirtualGamepadKeyboard` ile tuş ve modifier durumunu yönetir
-- `VirtualGamepadMouse` ile konum, scroll ve buton durumunu yönetir
-- `VirtualGamepadConfiguration` ile cihaz kimlik alanlarını üretir
-- Ağ, UI ve platforma bağlı gerçek OS enjeksiyon kodu içermez
+- Manages key and modifier state with `VirtualGamepadKeyboard`
+- Manages pointer movement, scroll, and buttons with `VirtualGamepadMouse`
+- Generates device identity fields with `VirtualGamepadConfiguration`
+- Does not include network, UI, or platform-specific OS injection code
 
 ## Requirements
 
-- macOS 15.0 veya sonrası
-- Xcode 16 veya sonrası
-- Swift 6.0 veya sonrası
+- macOS 15.0 or later
+- Xcode 16 or later
+- Swift 6.0 or later
 
 ## Installation
 
@@ -54,4 +54,4 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ## Related
 
-- [CoreOrbits Gamerpad](https://github.com/CoreOrbits/gamerpad_server_macos) — Tam macOS sunucu uygulaması
+- [CoreOrbits Gamerpad](https://github.com/CoreOrbits/gamerpad_server_macos) — Full macOS server application
